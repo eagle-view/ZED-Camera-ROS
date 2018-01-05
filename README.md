@@ -77,7 +77,9 @@ Place the package folder zed_wrapper in your catkin workspace source folder ~/ca
 Open a terminal and build the package:
 
   cd ~/catkin_ws/
+  
   catkin_make
+  
   source ./devel/setup.bash
 
 Run the program
