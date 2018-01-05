@@ -40,17 +40,22 @@ Dependancies for Point Cloud Libraries
 Download stable http://www.pointclouds.org/documentation/tutorials/compiling_pcl_posix.php
 Commands on terminal :
   tar xvfj pcl-pcl-1.7.2.tar.gz
+  
   cd pcl-pcl-1.7.2 && mkdir Reease && cd Release
   
-Run the CMake build system using the default options (Easy mode):
-  cmake ..
-Or change them (uses cmake-curses-gui) (Expert mode):
-  ccmake ..
+Run the CMake build system using the default options 
 
-Or compilation with compiler optimisation (Stable):
-  cmake -DCMAKE_BUILD_TYPE=Release ..
+(Easy mode): cmake ..
 
-Finnaly compile everything.
+Or change them (uses cmake-curses-gui) 
+
+(Expert mode): ccmake ..
+
+Or (RECOMMANDED) compilation with compiler optimisation 
+
+(Stable): cmake -DCMAKE_BUILD_TYPE=Release ..
+
+Finnaly compile everything:
   make -j2
 
 And install the result:
@@ -73,7 +78,9 @@ The zed_ros_wrapper is a catkin package. It depends on the following ROS package
     urdf
 
 Place the package folder zed_wrapper in your catkin workspace source folder ~/catkin_ws/src.
-  git clone https://github.com/eagle-view/ZED-Camera-ROS
+
+git clone https://github.com/eagle-view/ZED-Camera-ROS
+
 Open a terminal and build the package:
 
   cd ~/catkin_ws/
@@ -83,6 +90,7 @@ Open a terminal and build the package:
   source ./devel/setup.bash
 
 Run the program
+
 To launch the wrapper along with an Rviz preview, open a terminal and launch:
 
 roslaunch zed_wrapper display.launch
